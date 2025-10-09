@@ -7,3 +7,7 @@ dependencies:
   - name: cloud-comp
     version: 0.0.3
     repository: https://albatis.github.io/helm-charts/
+  - name: cloud-comp
+    alias: segundo
+    version: 0.0.3
+    repository: https://albatis.github.io/helm-charts/
