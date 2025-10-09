@@ -4,4 +4,4 @@ cloud-comp:
   servicePort: 8080
   nodePort: 30000
   replicas: 2
-  image: "nginx:latest"
+  image: "tomcat:latest"
