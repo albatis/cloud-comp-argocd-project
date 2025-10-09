@@ -5,11 +5,6 @@ cloud-comp:
   nodePort: 30000
   replicas: 1
   image: "nginx:latest"
-
-segundo:
-  name: segundo
-  containerPort: 80
-  servicePort: 8080
-  nodePort: 30001
-  replicas: 1
-  image: "nginx:latest"
+  resources:
+    cpu: 0
+    memory: 64Mi
