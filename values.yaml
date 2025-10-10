@@ -5,6 +5,10 @@ cloud-comp:
   nodePort: 30000
   replicas: 1
   image: "nginx:latest"
+  login: alexandrevieira
   resources:
     cpu: 0
     memory: 64Mi
+  volume:
+    size: 1Gi
+    path: /mnt
