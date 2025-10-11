@@ -9,6 +9,14 @@ cloud-comp:
   resources:
     cpu: 0
     memory: 64Mi
-  volume:
-    size: 1Gi
-    path: /mnt
+  volumes:
+    - name: project2-pv
+      size: 1Gi
+      path: /mnt/project2-pv
+      hostPath: /home/alexandrevieira/project2-pv
+      accessMode: ReadWriteMany
+    - name: arquivos
+      size: 1Gi
+      path: /mnt/arquivos
+      hostPath: /home/datasets/spotify/
+      accessMode: ReadOnlyMany
