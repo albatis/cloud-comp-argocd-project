@@ -9,10 +9,10 @@ cloud-comp:
   resources:
     cpu: 0
     memory: 64Mi
-  volumes:
-    - name: project2-pv
-      size: 1Gi
-      path: /mnt/project2-pv
-      hostPath: /home/alexandrevieira/project2-pv
-      accessMode: ReadWriteMany
-      ignore: true
+  volume.size: "1Gi"
+  #volumes:
+  #    size: 1Gi
+  #    path: /mnt/project2-pv
+  #    hostPath: /home/alexandrevieira/project2-pv
+  #    accessMode: ReadWriteMany
+  #    ignore: true
