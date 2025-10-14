@@ -4,15 +4,32 @@ cloud-comp:
   servicePort: 8080
   nodePort: 30000
   replicas: 1
-  image: "albatis/playlists-recommender-system:latest"
+  image: "nginx:latest"
   login: alexandrevieira
   resources:
     cpu: 0
     memory: 64Mi
-  volume.size: "1Gi"
-  #volumes:
-  #    size: 1Gi
-  #    path: /mnt/project2-pv
-  #    hostPath: /home/alexandrevieira/project2-pv
-  #    accessMode: ReadWriteMany
-  #    ignore: true
+  volume:
+    size: 1Gi
+    path: /mnt
+# cloud-comp:
+#   name: primeiro
+#   containerPort: 80
+#   servicePort: 8080
+#   nodePort: 30000
+#   replicas: 1
+#   image: "albatis/playlists-recommender-system:latest"
+#   login: alexandrevieira
+#   resources:
+#     cpu: 0
+#     memory: 64Mi
+#   #volume.size: "1Gi"
+#   volume:
+#     path: "/mnt/project"
+#     size: "1"
+#   #volumes:
+#   #    size: 1Gi
+#   #    path: /mnt/project2-pv
+#   #    hostPath: /home/alexandrevieira/project2-pv
+#   #    accessMode: ReadWriteMany
+#   #    ignore: true
