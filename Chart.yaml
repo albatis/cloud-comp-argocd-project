@@ -4,6 +4,6 @@ description: Chart para publicação do módulo
 type: application
 version: 0.0.1
 dependencies:
-  #- name: cloud-comp
-  #  version: 0.0.17
-  #  repository: https://albatis.github.io/helm-charts/
+  - name: cloud-comp
+    version: 0.0.18
+    repository: https://albatis.github.io/helm-charts/
