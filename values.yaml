@@ -15,8 +15,4 @@ cloud-comp:
       path: /mnt/project2-pv
       hostPath: /home/alexandrevieira/project2-pv
       accessMode: ReadWriteMany
-    - name: arquivos
-      size: 1Gi
-      path: /mnt/arquivos
-      hostPath: /home/datasets/spotify/
-      accessMode: ReadOnlyMany
+      ignore: true
