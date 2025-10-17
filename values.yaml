@@ -4,12 +4,12 @@ cloud-comp-job:
   resources:
     cpu: 0
     memory: 64Mi
-  commandInitContainer: "wget --no-check-certificate https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv -P /mnt/project2-pv"
+  commandInitContainer: "rm -f /mnt/*; wget --no-check-certificate https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv -P /mnt;"
   volumes:
     - name: project2-pv
       storageClassName: default-storage-class-alexandrevieira
       size: 1Gi
-      path: /mnt/project2-pv
+      path: /mnt
       hostPath: /home/alexandrevieira/project2-pv
       accessMode: ReadWriteMany
       ignore: true
