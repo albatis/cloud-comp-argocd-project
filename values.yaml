@@ -4,7 +4,7 @@ cloud-comp-job:
   image: albatis/generator-rules-processor:latest
   resources:
     cpu: 0
-    memory: 20Gi
+    memory: 2Gi
   environments:
     URL: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv"
   commandInitContainer: "rm -f /mnt/*; wget --no-check-certificate $URL -P /mnt;"
