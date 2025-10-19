@@ -1,5 +1,5 @@
 cloud-comp-job:
-  name: job-rules
+  name: job-rules-ds2
   login: alexandrevieira
   image: albatis/generator-rules-processor:latest
   resources:
