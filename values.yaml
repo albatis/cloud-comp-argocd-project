@@ -1,9 +1,10 @@
 cloud-comp-job:
-  name: primeiro
+  name: job-ds1-2023
   login: alexandrevieira
+  image: albatis/generator-rules-processor:latest
   resources:
     cpu: 0
-    memory: 64Mi
+    memory: 20Gi
   environments:
     URL: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv"
   commandInitContainer: "rm -f /mnt/*; wget --no-check-certificate $URL -P /mnt;"
@@ -15,64 +16,3 @@ cloud-comp-job:
       hostPath: /home/alexandrevieira/project2-pv
       accessMode: ReadWriteMany
       ignore: true
-
-
-
-# cloud-comp:
-#   name: primeiro
-#   image: "albatis/playlists-recommender-system:latest"
-#   login: alexandrevieira
-#   resources:
-#     cpu: 0
-#     memory: 64Mi
-#   commandInitContainer: "wget --no-check-certificate https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv -P /mnt/project2-pv"
-#   volumes:
-#     - name: project2-pv
-#       storageClassName: default-storage-class-alexandrevieira
-#       size: 1Gi
-#       path: /mnt/project2-pv
-#       hostPath: /home/alexandrevieira/project2-pv
-#       accessMode: ReadWriteMany
-#       ignore: true
-
-
-# cloud-comp:
-#   name: primeiro
-#   containerPort: 80
-#   servicePort: 8080
-#   nodePort: 30000
-#   replicas: 1
-#   image: "nginx:latest"
-#   login: alexandrevieira
-#   resources:
-#     cpu: 0
-#     memory: 64Mi
-#   volumes:
-#     - name: project2-pv
-#       storageClassName: default-storage-class-alexandrevieira
-#       size: 1Gi
-#       path: /mnt/project2-pv
-#       hostPath: /home/alexandrevieira/project2-pv
-#       accessMode: ReadWriteMany
-#       ignore: true
-# cloud-comp:
-#   name: primeiro
-#   containerPort: 80
-#   servicePort: 8080
-#   nodePort: 30000
-#   replicas: 1
-#   image: "albatis/playlists-recommender-system:latest"
-#   login: alexandrevieira
-#   resources:
-#     cpu: 0
-#     memory: 64Mi
-#   #volume.size: "1Gi"
-#   volume:
-#     path: "/mnt/project"
-#     size: "1"
-#   #volumes:
-#   #    size: 1Gi
-#   #    path: /mnt/project2-pv
-#   #    hostPath: /home/alexandrevieira/project2-pv
-#   #    accessMode: ReadWriteMany
-#   #    ignore: true
