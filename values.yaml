@@ -24,7 +24,7 @@ playlists-recommender-system:
   name: playlists-recommender-system
   login: alexandrevieira
   image: albatis/playlists-recommender-system:latest
-  replicas: 2
+  replicas: 1
   containerPort: 8000
   servicePort: 8080
   nodePort: 30000
