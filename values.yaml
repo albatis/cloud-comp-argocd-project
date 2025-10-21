@@ -62,3 +62,4 @@ playlists-recommender-system:
       #hostPath: /home/alexandrevieira/project2-pv
       #accessMode: ReadWriteMany
       ignore: true
+      ignorePVC: true
