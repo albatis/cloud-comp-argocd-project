@@ -14,7 +14,7 @@ cloud-comp-job:
   volumes:
     - name: project2-pv
       storageClassName: default-storage-class-alexandrevieira
-      size: 500Mi
+      size: 1Gi
       path: /mnt
       hostPath: /home/alexandrevieira/project2-pv
       accessMode: ReadWriteMany
@@ -55,9 +55,9 @@ playlists-recommender-system:
     timeoutSeconds: 3
     failureThreshold: 2
   volumes:
-    - name: project2-web
+    - name: project2-pv
       storageClassName: default-storage-class-alexandrevieira
-      size: 500Mi
+      size: 1Gi
       path: /mnt
       #hostPath: /home/alexandrevieira/project2-pv
       #accessMode: ReadWriteMany
