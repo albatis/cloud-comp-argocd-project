@@ -55,10 +55,10 @@ playlists-recommender-system:
     timeoutSeconds: 3
     failureThreshold: 2
   volumes:
-    - name: project2-pv
+    - name: project2-web
       storageClassName: default-storage-class-alexandrevieira
       size: 1Gi
       path: /mnt
-      hostPath: /home/alexandrevieira/project2-pv
-      accessMode: ReadWriteMany
+      #hostPath: /home/alexandrevieira/project2-pv
+      #accessMode: ReadWriteMany
       ignore: true
