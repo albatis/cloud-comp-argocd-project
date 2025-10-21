@@ -1,3 +1,4 @@
+# Para trocar os arquivos troque o name, URL e INPUT_FILE_PATH
 cloud-comp-job:
   name: job-rules-ds1
   login: alexandrevieira
@@ -10,6 +11,25 @@ cloud-comp-job:
     MIN_SUPPORT: "0.06"
     INPUT_FILE_PATH: /mnt/2023_spotify_ds1.csv
   commandInitContainer: "rm -f /mnt/*; wget --no-check-certificate $URL -P /mnt;"
+  volumes:
+    - name: project2-pv
+      storageClassName: default-storage-class-alexandrevieira
+      size: 1Gi
+      path: /mnt
+      hostPath: /home/alexandrevieira/project2-pv
+      accessMode: ReadWriteMany
+      ignore: true
+  
+playlists-recommender-system:
+  name: playlists-recommender-system
+  login: alexandrevieira
+  image: albatis/playlists-recommender-system:latest
+  containerPort: 8000
+  servicePort: 8080
+  nodePort: 30000
+  resources:
+    cpu: 0
+    memory: 2G
   volumes:
     - name: project2-pv
       storageClassName: default-storage-class-alexandrevieira
