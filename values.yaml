@@ -1,6 +1,6 @@
 # Para trocar os arquivos troque o name, URL e INPUT_FILE_PATH
 cloud-comp-job:
-  name: job-rules-ds1
+  name: job-rules-ds1-s4
   login: alexandrevieira
   image: albatis/generator-rules-processor:latest
   resources:
