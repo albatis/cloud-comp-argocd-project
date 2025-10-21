@@ -8,6 +8,6 @@ dependencies:
     version: 0.0.9
     repository: https://albatis.github.io/helm-charts/
   - name: cloud-comp
-    version: 0.0.31
+    version: 0.0.34
     repository: https://albatis.github.io/helm-charts/
     alias: playlists-recommender-system
