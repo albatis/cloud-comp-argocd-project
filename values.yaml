@@ -19,6 +19,7 @@ cloud-comp-job:
       hostPath: /home/alexandrevieira/project2-pv
       accessMode: ReadWriteMany
       ignore: true
+      ignorePVC: true
   
 playlists-recommender-system:
   name: playlists-recommender-system
@@ -62,4 +63,3 @@ playlists-recommender-system:
       #hostPath: /home/alexandrevieira/project2-pv
       #accessMode: ReadWriteMany
       ignore: true
-      ignorePVC: true
