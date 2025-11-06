@@ -57,7 +57,7 @@ Este arquivo define os valores que o Chart/Helm do projeto utilizará. Você pod
 #### Valores principais para configuração do projeto
 
 ```yaml
-# Para trocar os arquivos troque o name, URL e INPUT_FILE_PATH
+# Para trocar os arquivos troque apenas as variáveis de ambientes URL e INPUT_FILE_PATH que será feito um novo processamento depois que o ArgoCD sincronizar as alterações.
 cloud-comp-job:
   name: job-rules
   login: alexandrevieira
