@@ -6,9 +6,9 @@ cloud-comp-job:
   resources:
     memory: 2G
   environments:
-    URL: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds2.csv"
+    URL: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv"
     MIN_SUPPORT: "0.04"
-    INPUT_FILE_PATH: /mnt/2023_spotify_ds2.csv
+    INPUT_FILE_PATH: /mnt/2023_spotify_ds1.csv
   commandInitContainer: "rm -f /mnt/*; wget --no-check-certificate $URL -P /mnt;"
   volumes:
     - name: project2-pv
