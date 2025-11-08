@@ -28,7 +28,7 @@ playlists-recommender-system:
   replicas: 1
   containerPort: 8000
   servicePort: 8080
-  nodePort: 30000
+  nodePort: 50000
   resources:
     cpu: 0
     memory: 2G
