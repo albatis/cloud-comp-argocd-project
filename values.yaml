@@ -4,8 +4,7 @@ cloud-comp-job:
   login: alexandrevieira
   image: albatis/generator-rules-processor:latest
   resources:
-    cpu: 0
-    memory: 2G
+    memory: 2Gi
   environments:
     URL: "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds2.csv"
     MIN_SUPPORT: "0.04"
@@ -30,7 +29,6 @@ playlists-recommender-system:
   servicePort: 8080
   nodePort: 50000
   resources:
-    cpu: 0
     memory: 512Mi
   startupProbe:
     httpGet:
