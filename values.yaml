@@ -25,13 +25,13 @@ playlists-recommender-system:
   name: playlists-recommender-system
   login: alexandrevieira
   image: albatis/playlists-recommender-system:latest
-  replicas: 1
+  replicas: 2
   containerPort: 8000
   servicePort: 8080
   nodePort: 50000
   resources:
     cpu: 0
-    memory: 2G
+    memory: 500Mi
   startupProbe:
     httpGet:
       path: /healthz
