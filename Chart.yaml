@@ -5,7 +5,7 @@ type: application
 version: 0.0.1
 dependencies:
   - name: cloud-comp-job
-    version: 0.0.12
+    version: 0.0.13
     repository: https://albatis.github.io/helm-charts/
   - name: cloud-comp
     version: 0.0.39
