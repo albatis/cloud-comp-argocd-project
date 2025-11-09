@@ -3,11 +3,11 @@ name: modulo
 description: Chart para publicação do módulo
 type: application
 version: 0.0.1
-dependencies:
-  - name: cloud-comp-job
-    version: 0.0.13
-    repository: https://albatis.github.io/helm-charts/
-  - name: cloud-comp
-    version: 0.0.39
-    repository: https://albatis.github.io/helm-charts/
-    alias: playlists-recommender-system
+# dependencies:
+#   - name: cloud-comp-job
+#     version: 0.0.13
+#     repository: https://albatis.github.io/helm-charts/
+#   - name: cloud-comp
+#     version: 0.0.39
+#     repository: https://albatis.github.io/helm-charts/
+#     alias: playlists-recommender-system
